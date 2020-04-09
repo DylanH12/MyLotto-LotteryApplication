@@ -78,6 +78,14 @@ public class HomeController {
                 playerLibrary.getInstance().addPlayer(player);
                 System.out.println("Player Added");
 
+                // Throw message box saying about numbers being inbetween
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Information");
+                alert.setHeaderText(null);
+                alert.setContentText("Player has been added!");
+
+                alert.show();
+
                 txtPlayerName.setText(null);
                 txtNumber1.setText(null);
                 txtNumber2.setText(null);
