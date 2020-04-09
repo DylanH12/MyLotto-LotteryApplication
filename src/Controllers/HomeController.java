@@ -146,7 +146,7 @@ public class HomeController {
             Parent ready = FXMLLoader.load(getClass().getResource("../layout/app_readyToPlay.fxml"));
             Stage stage = new Stage();
             stage.setTitle("Ready to Play?");
-            stage.setScene(new Scene(ready, 700, 310));
+            stage.setScene(new Scene(ready));
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
