@@ -6,25 +6,25 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="267.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.InputPlayerNumbersController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="510.0" style="-fx-background-color: #0067fa;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.InputPlayerNumbersController">
    <children>
-      <TextField fx:id="txtPlayN1" layoutX="18.0" layoutY="107.0" prefHeight="34.0" prefWidth="51.0" />
-      <TextField fx:id="txtPlayN2" layoutX="80.0" layoutY="107.0" prefHeight="34.0" prefWidth="51.0" />
-      <TextField fx:id="txtPlayN3" layoutX="139.0" layoutY="107.0" prefHeight="34.0" prefWidth="51.0" />
-      <TextField fx:id="txtPlayN4" layoutX="199.0" layoutY="107.0" prefHeight="34.0" prefWidth="51.0" />
-      <TextField fx:id="txtPlayN5" layoutX="256.0" layoutY="107.0" prefHeight="34.0" prefWidth="51.0" />
-      <TextField fx:id="txtPlayN6" layoutX="311.0" layoutY="107.0" prefHeight="34.0" prefWidth="51.0" />
-      <Button fx:id="btnCheck" layoutX="392.0" layoutY="107.0" mnemonicParsing="false" onAction="#checkButtonAction" prefHeight="63.0" prefWidth="78.0" text="Check">
+      <TextField fx:id="txtPlayN1" layoutX="14.0" layoutY="90.0" prefHeight="35.0" prefWidth="50.0" />
+      <TextField fx:id="txtPlayN2" layoutX="64.0" layoutY="90.0" prefHeight="35.0" prefWidth="50.0" />
+      <TextField fx:id="txtPlayN3" layoutX="114.0" layoutY="90.0" prefHeight="35.0" prefWidth="50.0" />
+      <TextField fx:id="txtPlayN4" layoutX="164.0" layoutY="90.0" prefHeight="35.0" prefWidth="50.0" />
+      <TextField fx:id="txtPlayN5" layoutX="214.0" layoutY="90.0" prefHeight="35.0" prefWidth="50.0" />
+      <TextField fx:id="txtPlayN6" layoutX="264.0" layoutY="90.0" prefHeight="35.0" prefWidth="50.0" />
+      <Button fx:id="btnCheck" layoutX="321.0" layoutY="88.0" mnemonicParsing="false" onAction="#checkButtonAction" prefHeight="40.0" prefWidth="175.0" style="-fx-font-family: Rockwell;" text="Check">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Label layoutX="18.0" layoutY="56.0" prefHeight="51.0" prefWidth="344.0" text="Enter Numbers:">
+      <Label layoutX="8.0" layoutY="14.0" prefHeight="61.0" prefWidth="362.0" style="-fx-font-family: Rockwell;" text="Enter your numbers to be checked against the lottery numbers" textFill="WHITE">
          <font>
-            <Font size="32.0" />
+            <Font name="System Italic" size="12.0" />
          </font>
       </Label>
-      <Button fx:id="btnExit" layoutX="497.0" layoutY="107.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="63.0" prefWidth="90.0" text="Exit">
+      <Button fx:id="btnExit" layoutX="152.0" layoutY="152.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="40.0" prefWidth="175.0" style="-fx-font-family: Rockwell;" text="Exit">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
