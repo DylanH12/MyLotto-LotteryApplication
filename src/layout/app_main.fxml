@@ -5,20 +5,18 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane fx:controller="Controllers.MainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="241.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="480.0" style="-fx-background-color: #0067fa;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainController">
    <children>
-      <Label layoutX="79.0" layoutY="14.0" prefHeight="76.0" prefWidth="324.0" text="MyLotto - Lottery Application">
+      <Label layoutX="79.0" layoutY="14.0" prefHeight="76.0" prefWidth="324.0" style="-fx-font-family: Rockwell;" text="MyLotto - Lottery Application" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="btnStartApplication" layoutX="137.0" layoutY="95.0" mnemonicParsing="false" onAction="#startApplicationButtonAction" text="Start Application">
-         <font>
+      <Button fx:id="btnStartApplication" layoutX="116.0" layoutY="96.0" mnemonicParsing="false" onAction="#startApplicationButtonAction" prefHeight="50.0" prefWidth="250.0" style="-fx-font-family: Rockwell;" text="Start Application">         <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="btnExit" layoutX="137.0" layoutY="152.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="51.0" prefWidth="208.0" text="Exit">
+      <Button fx:id="btnExit" layoutX="116.0" layoutY="164.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="50.0" prefWidth="250.0" style="-fx-font-family: Rockwell;" text="Exit">
          <font>
             <Font size="24.0" />
          </font>
