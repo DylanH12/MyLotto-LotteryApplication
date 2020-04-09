@@ -10,7 +10,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("layout/app_main.fxml"));
         primaryStage.setTitle("MyLotto");
-        primaryStage.setScene(new Scene(root, 481, 241));
+        Scene scene = new Scene(root, 481, 241);
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 

@@ -21,7 +21,7 @@ public class MainController {
         try {
             Parent hom_page = FXMLLoader.load(getClass().getResource("../layout/app_home.fxml"));
             Stage app = (Stage)((Node) actionEvent.getSource()).getScene().getWindow();
-            app.setScene(new Scene(hom_page, 700, 310));
+            app.setScene(new Scene(hom_page));
             app.show();
         } catch (IOException e) {
             e.printStackTrace();

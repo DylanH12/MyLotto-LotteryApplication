@@ -6,46 +6,46 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="700.0" style="-fx-background-color: #1dbab4;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
    <children>
-      <Label layoutX="14.0" layoutY="14.0" prefHeight="63.0" prefWidth="370.0" text="MyLotto - Lottery Application">
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="63.0" prefWidth="370.0" style="-fx-font-family: Garamond;" text="MyLotto - Lottery Application">
          <font>
             <Font size="27.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="122.0" prefHeight="17.0" prefWidth="161.0" text="Player name">
+      <Label layoutX="14.0" layoutY="77.0" prefHeight="17.0" prefWidth="161.0" style="-fx-font-family: Garamond;" text="Player name">
          <font>
             <Font size="23.0" />
          </font>
       </Label>
-      <Label layoutX="411.0" layoutY="122.0" prefHeight="34.0" prefWidth="182.0" text="Player Numbers">
+      <Label layoutX="234.0" layoutY="74.0" prefHeight="34.0" prefWidth="182.0" style="-fx-font-family: Garamond;" text="Player Numbers">
          <font>
             <Font size="23.0" />
          </font>
       </Label>
-      <TextField fx:id="txtPlayerName" layoutX="14.0" layoutY="156.0" prefHeight="34.0" prefWidth="176.0" promptText="Please enter player name" />
-      <TextField fx:id="txtNumber1" layoutX="325.0" layoutY="156.0" prefHeight="34.0" prefWidth="51.0" />
-      <TextField fx:id="txtNumber2" layoutX="384.0" layoutY="156.0" prefHeight="34.0" prefWidth="51.0" />
-      <TextField fx:id="txtNumber3" layoutX="444.0" layoutY="156.0" prefHeight="34.0" prefWidth="51.0" />
-      <TextField fx:id="txtNumber4" layoutX="502.0" layoutY="156.0" prefHeight="34.0" prefWidth="51.0" />
-      <TextField fx:id="txtNumber5" layoutX="561.0" layoutY="156.0" prefHeight="34.0" prefWidth="51.0" />
-      <TextField fx:id="txtNumber6" layoutX="618.0" layoutY="156.0" prefHeight="34.0" prefWidth="51.0" />
-      <Button fx:id="btnShowPlayers" layoutX="199.0" layoutY="264.0" mnemonicParsing="false" onAction="#showPlayersButtonAction" prefHeight="34.0" prefWidth="176.0" text="Show Players">
+      <TextField fx:id="txtPlayerName" layoutX="7.0" layoutY="108.0" prefHeight="34.0" prefWidth="176.0" promptText="Please enter player name" />
+      <TextField fx:id="txtNumber1" layoutX="209.0" layoutY="108.0" prefHeight="35.0" prefWidth="50.0" />
+      <TextField fx:id="txtNumber2" layoutX="259.0" layoutY="108.0" prefHeight="35.0" prefWidth="50.0" />
+      <TextField fx:id="txtNumber3" layoutX="309.0" layoutY="108.0" prefHeight="35.0" prefWidth="50.0" />
+      <TextField fx:id="txtNumber4" layoutX="359.0" layoutY="108.0" prefHeight="35.0" prefWidth="50.0" />
+      <TextField fx:id="txtNumber5" layoutX="409.0" layoutY="108.0" prefHeight="35.0" prefWidth="50.0" />
+      <TextField fx:id="txtNumber6" layoutX="459.0" layoutY="108.0" prefHeight="35.0" prefWidth="50.0" />
+      <Button fx:id="btnShowPlayers" layoutX="246.0" layoutY="178.0" mnemonicParsing="false" onAction="#showPlayersButtonAction" prefHeight="40.0" prefWidth="175.0" style="-fx-font-family: Garamond;" text="Show Players">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="btnAdd" layoutX="510.0" layoutY="264.0" mnemonicParsing="false" onAction="#addPlayerNumberButtonAction" prefHeight="34.0" prefWidth="176.0" text="Add">
+      <Button fx:id="btnAdd" layoutX="519.0" layoutY="105.0" mnemonicParsing="false" onAction="#addPlayerNumberButtonAction" prefHeight="40.0" prefWidth="175.0" style="-fx-font-family: Garamond;" text="Add Player">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="btnExit" layoutX="14.0" layoutY="264.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="34.0" prefWidth="176.0" text="Exit">
+      <Button fx:id="btnExit" layoutX="7.0" layoutY="178.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="40.0" prefWidth="175.0" style="-fx-font-family: Garamond;" text="Exit">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="btnReadyToPlay" layoutX="510.0" layoutY="29.0" mnemonicParsing="false" onAction="#readyToPlayButtonAction" prefHeight="34.0" prefWidth="176.0" text="Ready To Play?">
+      <Button fx:id="btnReadyToPlay" layoutX="509.0" layoutY="178.0" mnemonicParsing="false" onAction="#readyToPlayButtonAction" prefHeight="40.0" prefWidth="175.0" style="-fx-font-family: Garamond;" text="Ready To Play?">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
