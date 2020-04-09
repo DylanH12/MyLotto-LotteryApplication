@@ -23,11 +23,20 @@ public class ShowPlayersController {
         {
             Player[] players = playerLibrary.getInstance().getPlayers();
 
-            for (Player p : players)
+            if (players.length == 0)
             {
-                txtShowPlayers.appendText("Player Name: " + p.getPlayerName() + "\n");
-                txtShowPlayers.appendText( p.getPlayerName() + "'s Numbers: " + p.getPlayerNumbers() + "\n");
-                txtShowPlayers.appendText( "\n");
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Information");
+                alert.setHeaderText(null);
+                alert.setContentText("No players to show");
+                alert.show();
+            }
+            else {
+                for (Player p : players) {
+                    txtShowPlayers.appendText("Player Name: " + p.getPlayerName() + "\n");
+                    txtShowPlayers.appendText(p.getPlayerName() + "'s Numbers: " + p.getPlayerNumbers() + "\n");
+                    txtShowPlayers.appendText("\n");
+                }
             }
         }
     }
