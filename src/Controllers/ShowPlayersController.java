@@ -35,6 +35,7 @@ public class ShowPlayersController {
                 for (Player p : players) {
                     txtShowPlayers.appendText("Player Name: " + p.getPlayerName() + "\n");
                     txtShowPlayers.appendText(p.getPlayerName() + "'s Numbers: " + p.getPlayerNumbers() + "\n");
+                    txtShowPlayers.appendText("======================");
                     txtShowPlayers.appendText("\n");
                 }
             }
