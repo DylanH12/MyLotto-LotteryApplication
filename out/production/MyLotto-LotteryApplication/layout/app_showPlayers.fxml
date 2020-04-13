@@ -18,7 +18,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <TextArea fx:id="txtShowPlayers" editable="false" layoutX="3.0" layoutY="41.0" prefHeight="119.0" prefWidth="323.0" style="-fx-font-family: Rockwell;" />
+      <TextArea fx:id="txtShowPlayers" editable="false" layoutX="3.0" layoutY="41.0" prefHeight="120.0" prefWidth="323.0" style="-fx-font-family: Rockwell;" />
       <Label layoutX="3.0" prefHeight="40.0" prefWidth="257.0" style="-fx-font-family: Rockwell;" text="Show players in the draw" textFill="WHITE">
          <font>
             <Font name="System Italic" size="12.0" />

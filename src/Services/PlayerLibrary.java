@@ -28,9 +28,8 @@ public class PlayerLibrary {
 
     public void addPlayer(Player player)
     {
-        Integer[] sd = player.getPlayerNumbers();
-         playersMap.put(player.getPlayerName(), sd);
-//        players.add(player);
+        Integer[] numbers = player.getPlayerNumbers();
+        playersMap.put(player.getPlayerName(), numbers);
     }
 
     public Map<String, Integer[]> getPlayers()

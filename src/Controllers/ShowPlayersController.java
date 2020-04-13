@@ -34,8 +34,10 @@ public class ShowPlayersController{
             }
             else {
                 for (Map.Entry<String, Integer[]> entry : players.entrySet()){
+
                     String key = entry.getKey();
                     Integer[] value = entry.getValue();
+
                     txtShowPlayers.appendText("Player Name: " + key + "\n");
                     txtShowPlayers.appendText("'Numbers: " + Arrays.toString(value).replaceAll("\\[|\\]|,|\\s", " ") + "\n");
                     txtShowPlayers.appendText("======================");
