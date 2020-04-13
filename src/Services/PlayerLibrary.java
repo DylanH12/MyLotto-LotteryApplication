@@ -2,18 +2,20 @@ package Services;
 
 import Models.Player;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
 
 public class PlayerLibrary {
 
     // Singleton Object
     // Check if this is doing a singleton
     private static PlayerLibrary instance = null;
-    private LinkedList<Player> players;
+    private Map<String, Integer[]> playersMap;
 
     private PlayerLibrary()
     {
-        players = new LinkedList<>();
+        playersMap = new HashMap();
     }
 
     // Instance property returns the singleton instance
@@ -26,13 +28,13 @@ public class PlayerLibrary {
 
     public void addPlayer(Player player)
     {
-        players.add(player);
+        Integer[] sd = player.getPlayerNumbers();
+         playersMap.put(player.getPlayerName(), sd);
+//        players.add(player);
     }
 
-    public Player[] getPlayers()
+    public Map<String, Integer[]> getPlayers()
     {
-        Object[] objarr = players.toArray();
-        Player[] playersArr = Arrays.copyOf(objarr, objarr.length, Player[].class);
-        return playersArr;
+        return playersMap;
     }
 }

@@ -1,6 +1,5 @@
 package Controllers;
 
-import Models.Player;
 import Services.PlayerLibrary;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -11,8 +10,10 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Map;
 
-public class ShowPlayersController {
+public class ShowPlayersController{
     public Button btnExit;
     public TextArea txtShowPlayers;
     PlayerLibrary playerLibrary;
@@ -21,9 +22,9 @@ public class ShowPlayersController {
 
         if (txtShowPlayers.getText().isEmpty())
         {
-            Player[] players = playerLibrary.getInstance().getPlayers();
+            Map<String, Integer[]> players = playerLibrary.getInstance().getPlayers();
 
-            if (players.length == 0)
+            if (players.size() == 0)
             {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Information");
@@ -32,9 +33,11 @@ public class ShowPlayersController {
                 alert.show();
             }
             else {
-                for (Player p : players) {
-                    txtShowPlayers.appendText("Player Name: " + p.getPlayerName() + "\n");
-                    txtShowPlayers.appendText(p.getPlayerName() + "'s Numbers: " + p.getPlayerNumbers() + "\n");
+                for (Map.Entry<String, Integer[]> entry : players.entrySet()){
+                    String key = entry.getKey();
+                    Integer[] value = entry.getValue();
+                    txtShowPlayers.appendText("Player Name: " + key + "\n");
+                    txtShowPlayers.appendText("'Numbers: " + Arrays.toString(value).replaceAll("\\[|\\]|,|\\s", " ") + "\n");
                     txtShowPlayers.appendText("======================");
                     txtShowPlayers.appendText("\n");
                 }

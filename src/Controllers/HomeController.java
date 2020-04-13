@@ -27,7 +27,7 @@ public class HomeController {
     Boolean hasDuplicates = false;
 
     Player player;
-    int[] numbers;
+    Integer[] numbers;
     PlayerLibrary playerLibrary;
 
     public void addPlayerNumberButtonAction(ActionEvent actionEvent) {
@@ -54,7 +54,7 @@ public class HomeController {
                 Integer.parseInt(txtNumber5.getText()) >= 1 && Integer.parseInt(txtNumber5.getText()) <= 59 &&
                 Integer.parseInt(txtNumber6.getText()) >= 1 && Integer.parseInt(txtNumber6.getText()) <= 59) {
 
-            numbers = new int[]{
+            numbers = new Integer[]{
                     Integer.parseInt(txtNumber1.getText()),
                     Integer.parseInt(txtNumber2.getText()),
                     Integer.parseInt(txtNumber3.getText()),

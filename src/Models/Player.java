@@ -10,9 +10,9 @@ public class Player {
 
     private int id;
     private String playerName;
-    private int[] playerNumbers;
+    private Integer[] playerNumbers;
 
-    public Player(String playerName, int[] playerNumbers)
+    public Player(String playerName, Integer[] playerNumbers)
     {
         this.id = count.incrementAndGet();
         this.playerName = playerName;
@@ -29,9 +29,9 @@ public class Player {
         return this.playerName;
     }
 
-    public String getPlayerNumbers()
+    public Integer[] getPlayerNumbers()
     {
-        return Arrays.toString(this.playerNumbers).replaceAll("\\[|\\]|,|\\s", " ");
+        return this.playerNumbers;
     }
 
     @Override
