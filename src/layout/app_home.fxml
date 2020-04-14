@@ -24,7 +24,7 @@
                         </Label>
                      </children>
                   </Pane>
-                  <Button fx:id="btnShowPlayers" alignment="BASELINE_LEFT" layoutY="115.0" mnemonicParsing="false" onAction="#showPlayersButtonAction" prefHeight="30.0" prefWidth="340.0" style="-fx-background-color: #2C2B30;" text="Show Players" textFill="WHITE">
+                  <Button fx:id="btnShowPlayers" alignment="BASELINE_LEFT" layoutY="115.0" mnemonicParsing="false" onAction="#showPlayersButtonAction" prefHeight="30.0" prefWidth="340.0" style="-fx-background-color: #2C2B30;" text="Players List" textFill="WHITE">
                      <font>
                         <Font name="Malgun Gothic" size="14.0" />
                      </font>
@@ -35,7 +35,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button fx:id="btnExit" alignment="BASELINE_LEFT" layoutY="216.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="30.0" prefWidth="340.0" style="-fx-background-color: #2C2B30;" text="Exit" textFill="WHITE">
+                  <Button fx:id="btnExit" alignment="BASELINE_LEFT" layoutY="216.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="30.0" prefWidth="340.0" style="-fx-background-color: #2C2B30;" text="Exit Application" textFill="WHITE">
                      <font>
                         <Font name="Malgun Gothic" size="14.0" />
                      </font>
