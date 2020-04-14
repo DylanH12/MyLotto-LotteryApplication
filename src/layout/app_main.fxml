@@ -28,13 +28,16 @@
             </FontAwesomeIcon>
          </graphic>
       </Button>
-      <Button fx:id="btnExit" layoutX="-1.0" layoutY="164.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="50.0" prefWidth="480.0" style="-fx-background-color: #2C2B30;" text="Exit" textFill="WHITE">
+      <Button fx:id="btnExit" layoutX="-1.0" layoutY="164.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="50.0" prefWidth="480.0" style="-fx-background-color: #2C2B30;" text="Close Application" textFill="WHITE">
          <font>
             <Font name="Malgun Gothic" size="14.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" />
+         </graphic>
       </Button>
    </children>
 </Pane>
