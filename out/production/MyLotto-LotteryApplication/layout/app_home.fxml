@@ -1,60 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<?import java.net.URL?>
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="284.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
    <children>
-      <Label layoutX="14.0" prefHeight="47.0" prefWidth="370.0" style="-fx-font-family: Rockwell;" text="MyLotto - Lottery Application">
-         <font>
-            <Font size="27.0" />
-         </font>
-      </Label>
-      <Label layoutX="267.0" layoutY="74.0" prefHeight="17.0" prefWidth="161.0" style="-fx-font-family: Rockwell;" text="Player name">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Label>
-      <Label layoutX="257.0" layoutY="143.0" prefHeight="34.0" prefWidth="182.0" style="-fx-font-family: Rockwell;" text="Player Numbers">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Label>
-      <TextField fx:id="txtPlayerName" layoutX="258.0" layoutY="102.0" prefHeight="35.0" prefWidth="299.0" promptText="Please enter player name" />
-      <TextField fx:id="txtNumber1" layoutX="257.0" layoutY="177.0" prefHeight="35.0" prefWidth="50.0" />
-      <TextField fx:id="txtNumber2" layoutX="307.0" layoutY="177.0" prefHeight="35.0" prefWidth="50.0" />
-      <TextField fx:id="txtNumber3" layoutX="357.0" layoutY="177.0" prefHeight="35.0" prefWidth="50.0" />
-      <TextField fx:id="txtNumber4" layoutX="407.0" layoutY="177.0" prefHeight="35.0" prefWidth="50.0" />
-      <TextField fx:id="txtNumber5" layoutX="457.0" layoutY="177.0" prefHeight="35.0" prefWidth="50.0" />
-      <TextField fx:id="txtNumber6" layoutX="507.0" layoutY="177.0" prefHeight="35.0" prefWidth="50.0" />
-      <Button fx:id="btnShowPlayers" layoutX="14.0" layoutY="74.0" mnemonicParsing="false" onAction="#showPlayersButtonAction" prefHeight="0.0" prefWidth="175.0" style="-fx-font-family: Rockwell;" text="Show Players">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnAdd" layoutX="320.0" layoutY="236.0" mnemonicParsing="false" onAction="#addPlayerNumberButtonAction" prefHeight="4.0" prefWidth="175.0" style="-fx-font-family: Rockwell;" text="Add Player">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnExit" layoutX="14.0" layoutY="236.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="0.0" prefWidth="175.0" style="-fx-font-family: Rockwell;" text="Exit">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnReadyToPlay" layoutX="14.0" layoutY="148.0" mnemonicParsing="false" onAction="#readyToPlayButtonAction" prefHeight="2.0" prefWidth="175.0" style="-fx-font-family: Rockwell;" text="Ready To Play?">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Label layoutX="267.0" layoutY="39.0" prefHeight="35.0" prefWidth="257.0" style="-fx-font-family: Rockwell;" text="Please enter your name and lucky numbers!">
-         <font>
-            <Font name="System Italic" size="12.0" />
-         </font>
-      </Label>
+      <AnchorPane prefHeight="260.0" prefWidth="900.0" style="-fx-background-color: #2C2B30;">
+         <children>
+            <AnchorPane prefHeight="260.0" prefWidth="330.0" style="-fx-background-color: #2C2B30;">
+               <children>
+                  <Pane prefHeight="56.0" prefWidth="340.0" style="-fx-background-color: #2C2B30;">
+                     <children>
+                        <Label layoutX="5.0" layoutY="12.0" prefHeight="35.0" prefWidth="330.0" text="MyLotto - Lottery Application" textFill="WHITE">
+                           <font>
+                              <Font name="Malgun Gothic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button fx:id="btnShowPlayers" alignment="BASELINE_LEFT" layoutY="115.0" mnemonicParsing="false" onAction="#showPlayersButtonAction" prefHeight="30.0" prefWidth="340.0" style="-fx-background-color: #2C2B30;" text="Show Players" textFill="WHITE">
+                     <font>
+                        <Font name="Malgun Gothic" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="DATABASE" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnExit" alignment="BASELINE_LEFT" layoutY="216.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="30.0" prefWidth="340.0" style="-fx-background-color: #2C2B30;" text="Exit" textFill="WHITE">
+                     <font>
+                        <Font name="Malgun Gothic" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnReadyToPlay" alignment="BASELINE_LEFT" layoutY="164.0" mnemonicParsing="false" onAction="#readyToPlayButtonAction" prefHeight="30.0" prefWidth="340.0" style="-fx-background-color: #2C2B30;" text="Ready To Play?" textFill="WHITE">
+                     <font>
+                        <Font name="Malgun Gothic" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="PLAY" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnAdd" alignment="BASELINE_LEFT" layoutY="72.0" mnemonicParsing="false" onAction="#addPlayerNumberButtonAction" prefHeight="30.0" prefWidth="340.0" style="-fx-background-color: #2C2B30;" text="Add Player" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Malgun Gothic" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="USER_PLUS" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="342.0" prefHeight="260.0" prefWidth="558.0" style="-fx-background-color: #474B4F;">
+               <children>
+                  <Label layoutX="6.0" layoutY="42.0" prefHeight="17.0" prefWidth="161.0" style="-fx-font-family: Rockwell;" text="Player name" textFill="WHITE" AnchorPane.leftAnchor="5.0">
+                     <font>
+                        <Font name="Malgun Gothic" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="6.0" layoutY="105.0" prefHeight="34.0" prefWidth="182.0" style="-fx-font-family: Rockwell;" text="Player Numbers" textFill="WHITE" AnchorPane.leftAnchor="5.0">
+                     <font>
+                        <Font name="Malgun Gothic" size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtPlayerName" layoutY="70.0" prefHeight="35.0" prefWidth="299.0" promptText="Please enter player name" AnchorPane.leftAnchor="5.0" />
+                  <TextField fx:id="txtNumber1" layoutX="8.0" layoutY="139.0" prefHeight="35.0" prefWidth="50.0" AnchorPane.leftAnchor="5.0" />
+                  <TextField fx:id="txtNumber2" layoutX="55.0" layoutY="139.0" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="txtNumber3" layoutX="105.0" layoutY="139.0" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="txtNumber4" layoutX="155.0" layoutY="139.0" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="txtNumber5" layoutX="205.0" layoutY="139.0" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="txtNumber6" layoutX="255.0" layoutY="139.0" prefHeight="35.0" prefWidth="50.0" />
+                  <Label layoutX="8.0" layoutY="14.0" prefHeight="35.0" prefWidth="257.0" style="-fx-font-family: Rockwell;" text="Please enter your name and lucky numbers!" textFill="WHITE" AnchorPane.leftAnchor="5.0">
+                     <font>
+                        <Font name="Malgun Gothic Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="204.0" prefHeight="17.0" prefWidth="558.0" text="Welcome to MyLotto" textFill="WHITE" AnchorPane.leftAnchor="1.0">
+                     <font>
+                        <Font name="Malgun Gothic" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="1.0" layoutY="221.0" prefHeight="17.0" prefWidth="558.0" text="MyLotto is a lottery application that adds players and their lucky numbers." textFill="WHITE" AnchorPane.leftAnchor="1.0">
+                     <font>
+                        <Font name="Malgun Gothic" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="1.0" layoutY="238.0" prefHeight="17.0" prefWidth="558.0" text="Generates random lottery numbers and allows for checking against the players lucky numbers" textFill="WHITE" AnchorPane.leftAnchor="1.0">
+                     <font>
+                        <Font name="Malgun Gothic" size="12.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
    </children>
 </Pane>
