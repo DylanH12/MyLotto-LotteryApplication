@@ -85,13 +85,13 @@ public class HomeController {
                 alert.setContentText("Player has been added!");
                 alert.show();
 
-                txtPlayerName.setText(null);
-                txtNumber1.setText(null);
-                txtNumber2.setText(null);
-                txtNumber3.setText(null);
-                txtNumber4.setText(null);
-                txtNumber5.setText(null);
-                txtNumber6.setText(null);
+                txtPlayerName.setText("");
+                txtNumber1.setText("");
+                txtNumber2.setText("");
+                txtNumber3.setText("");
+                txtNumber4.setText("");
+                txtNumber5.setText("");
+                txtNumber6.setText("");
             }
             else {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
