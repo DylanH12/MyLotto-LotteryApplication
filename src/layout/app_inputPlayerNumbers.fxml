@@ -1,33 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="510.0" style="-fx-background-color: #0067fa;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.InputPlayerNumbersController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="900.0" style="-fx-background-color: #474B4F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.InputPlayerNumbersController">
    <children>
-      <TextField fx:id="txtPlayN1" layoutX="14.0" layoutY="90.0" prefHeight="35.0" prefWidth="50.0" />
-      <TextField fx:id="txtPlayN2" layoutX="64.0" layoutY="90.0" prefHeight="35.0" prefWidth="50.0" />
-      <TextField fx:id="txtPlayN3" layoutX="114.0" layoutY="90.0" prefHeight="35.0" prefWidth="50.0" />
-      <TextField fx:id="txtPlayN4" layoutX="164.0" layoutY="90.0" prefHeight="35.0" prefWidth="50.0" />
-      <TextField fx:id="txtPlayN5" layoutX="214.0" layoutY="90.0" prefHeight="35.0" prefWidth="50.0" />
-      <TextField fx:id="txtPlayN6" layoutX="264.0" layoutY="90.0" prefHeight="35.0" prefWidth="50.0" />
-      <Button fx:id="btnCheck" layoutX="321.0" layoutY="88.0" mnemonicParsing="false" onAction="#checkButtonAction" prefHeight="40.0" prefWidth="175.0" style="-fx-font-family: Rockwell;" text="Check">
+      <TextField fx:id="txtPlayN1" layoutX="341.0" layoutY="87.0" prefHeight="35.0" prefWidth="50.0" />
+      <TextField fx:id="txtPlayN2" layoutX="391.0" layoutY="87.0" prefHeight="35.0" prefWidth="50.0" />
+      <TextField fx:id="txtPlayN3" layoutX="441.0" layoutY="87.0" prefHeight="35.0" prefWidth="50.0" />
+      <TextField fx:id="txtPlayN4" layoutX="491.0" layoutY="87.0" prefHeight="35.0" prefWidth="50.0" />
+      <TextField fx:id="txtPlayN5" layoutX="541.0" layoutY="87.0" prefHeight="35.0" prefWidth="50.0" />
+      <TextField fx:id="txtPlayN6" layoutX="591.0" layoutY="87.0" prefHeight="35.0" prefWidth="50.0" />
+      <Label layoutX="341.0" prefHeight="61.0" prefWidth="362.0" text="Enter your numbers to be checked against the lottery numbers" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Label layoutX="8.0" layoutY="14.0" prefHeight="61.0" prefWidth="362.0" style="-fx-font-family: Rockwell;" text="Enter your numbers to be checked against the lottery numbers" textFill="WHITE">
-         <font>
-            <Font name="System Italic" size="12.0" />
+            <Font name="Malgun Gothic" size="12.0" />
          </font>
       </Label>
-      <Button fx:id="btnExit" layoutX="152.0" layoutY="152.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="40.0" prefWidth="175.0" style="-fx-font-family: Rockwell;" text="Exit">
+      <AnchorPane prefHeight="260.0" prefWidth="330.0" style="-fx-background-color: #2C2B30;">
+         <children>
+            <Button fx:id="btnCheck" alignment="BASELINE_LEFT" layoutY="72.0" mnemonicParsing="false" onAction="#checkButtonAction" prefHeight="30.0" prefWidth="340.0" style="-fx-background-color: #2C2B30;" text="Check my Numbers" textFill="WHITE">
+               <font>
+                  <Font name="Malgun Gothic" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="CHECK">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIcon>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnExit" alignment="BASELINE_LEFT" layoutY="216.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="30.0" prefWidth="340.0" style="-fx-background-color: #2C2B30;" text="Back to Home" textFill="WHITE">
+               <font>
+                  <Font name="Malgun Gothic" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="BACKWARD" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children></AnchorPane>
+      <Label layoutX="5.0" layoutY="12.0" prefHeight="35.0" prefWidth="330.0" text="MyLotto - Lottery Application" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="Malgun Gothic" size="18.0" />
          </font>
-      </Button>
+      </Label>
+      <Label layoutX="341.0" layoutY="201.0" prefHeight="17.0" prefWidth="558.0" text="Enter your numbers in the above text boxes." textFill="WHITE">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="341.0" layoutY="218.0" prefHeight="17.0" prefWidth="558.0" text="Click 'Check my Numbers' to have your numbers checked against the lottery ones generated" textFill="WHITE">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="341.0" layoutY="235.0" prefHeight="17.0" prefWidth="558.0" text="Good Luck !" textFill="WHITE">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="342.0" layoutY="47.0" prefHeight="35.0" prefWidth="199.0" text="Player's Numbers" textFill="WHITE">
+         <font>
+            <Font name="Malgun Gothic" size="23.0" />
+         </font>
+      </Label>
    </children>
 </Pane>
