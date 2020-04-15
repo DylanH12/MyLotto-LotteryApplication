@@ -10,9 +10,9 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="900.0" style="-fx-background-color: #474B4F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ShowPlayersController">
    <children>
-      <TextArea fx:id="txtShowPlayers" editable="false" layoutX="330.0" layoutY="74.0" prefHeight="186.0" prefWidth="570.0" style="-fx-font-family: Rockwell;">
+      <TextArea fx:id="txtShowPlayers" editable="false" layoutX="330.0" layoutY="74.0" prefHeight="186.0" prefWidth="570.0">
          <font>
-            <Font name="Malgun Gothic" size="14.0" />
+            <Font name="Malgun Gothic" size="15.0" />
          </font></TextArea>
       <Label layoutX="330.0" layoutY="14.0" prefHeight="40.0" prefWidth="433.0" style="-fx-font-family: Rockwell;" text="Click view players to display the players in the draw" textFill="WHITE">
          <font>
