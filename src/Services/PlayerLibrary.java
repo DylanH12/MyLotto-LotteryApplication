@@ -9,8 +9,8 @@ import java.util.Map;
 public class PlayerLibrary {
 
     // Singleton Object
-    // Check if this is doing a singleton
     private static PlayerLibrary instance = null;
+    // Data structure to hold the players in the application.
     private Map<String, Integer[]> playersMap;
 
     private PlayerLibrary()
@@ -28,8 +28,7 @@ public class PlayerLibrary {
 
     public void addPlayer(Player player)
     {
-        Integer[] numbers = player.getPlayerNumbers();
-        playersMap.put(player.getPlayerName(), numbers);
+        playersMap.put(player.getPlayerName(), player.getPlayerNumbers());
     }
 
     public Map<String, Integer[]> getPlayers()

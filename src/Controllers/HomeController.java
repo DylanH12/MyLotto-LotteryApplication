@@ -1,6 +1,7 @@
 package Controllers;
 
 import Models.Player;
+import Services.LotteryService;
 import Services.PlayerLibrary;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;

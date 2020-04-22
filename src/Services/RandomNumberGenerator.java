@@ -5,9 +5,16 @@ public class RandomNumberGenerator {
     private static RandomNumberGenerator instance = null;
     private static int[] randomNumbers = new int[6];
 
+    /*
+    Private constructor to stop instantiation of the class
+     */
     private RandomNumberGenerator() {
     }
 
+    /*
+    Will check if an instance is created
+    Gets the instance of the class
+     */
     public static RandomNumberGenerator getInstance() {
         if (instance == null) {
             instance = new RandomNumberGenerator();
