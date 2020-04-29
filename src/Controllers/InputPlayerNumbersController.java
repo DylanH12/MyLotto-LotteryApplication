@@ -71,6 +71,7 @@ public class InputPlayerNumbersController {
 
             if (!hasDuplicates)
             {
+                // Will sort the numbers inputted by the player.
                 int[] sortedPlayerNumbers = lotteryService.getInstance().sortNumbers(playersNumbers);
                 List<String> response = lotteryService.getInstance().checkNumbersForMatches(lotteryNumbers, sortedPlayerNumbers);
 

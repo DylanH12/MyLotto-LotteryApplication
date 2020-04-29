@@ -3,6 +3,8 @@ package Utlities;
 public class SelectionSort {
     private static SelectionSort instance = null;
 
+    private SelectionSort(){}
+
     public static SelectionSort getInstance() {
         if (instance == null)
             instance = new SelectionSort();

@@ -133,6 +133,7 @@ public class HomeController {
         try {
             Parent hom_page = FXMLLoader.load(getClass().getResource("../layout/app_main.fxml"));
             Stage stage = (Stage)((Node) actionEvent.getSource()).getScene().getWindow();
+            stage.setTitle("Main");
             stage.setScene(new Scene(hom_page));
             stage.show();
         } catch (IOException e) {

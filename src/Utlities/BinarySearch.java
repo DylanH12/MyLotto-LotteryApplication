@@ -4,6 +4,8 @@ public class BinarySearch {
 
     private static BinarySearch instance = null;
 
+    private BinarySearch(){}
+
     public static BinarySearch getInstance()
     {
         if (instance == null)

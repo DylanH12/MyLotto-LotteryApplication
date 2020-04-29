@@ -59,10 +59,10 @@ public class ReadyToPlayController {
                 txtNumber5.setText("");
                 txtNumber6.setText("");
 
-                newUnsortedRandomNumbers = lotteryService.getInstance().generateRandomNumbers();//randomNumberGenerator.getInstance().generate();
+                newUnsortedRandomNumbers = lotteryService.getInstance().generateRandomNumbers();
 
                 // Sort random numbers then put to text boxes
-                newSortedRandomNumbers = lotteryService.getInstance().sortNumbers(newUnsortedRandomNumbers);//selectionSort.getInstance().sort(unsortedRandomNumbers);
+                newSortedRandomNumbers = lotteryService.getInstance().sortNumbers(newUnsortedRandomNumbers);
 
                 txtNumber1.appendText(Integer.toString(newSortedRandomNumbers[0]));
                 txtNumber2.appendText(Integer.toString(newSortedRandomNumbers[1]));
@@ -81,10 +81,10 @@ public class ReadyToPlayController {
             }
         }
         else{
-            unsortedRandomNumbers = lotteryService.getInstance().generateRandomNumbers();//randomNumberGenerator.getInstance().generate();
+            unsortedRandomNumbers = lotteryService.getInstance().generateRandomNumbers();
 
-            // Sort random numbers then put to text boxes
-            sortedRandomNumbers = lotteryService.getInstance().sortNumbers(unsortedRandomNumbers);//selectionSort.getInstance().sort(unsortedRandomNumbers);
+            // Sort random numbers to then put to text boxes
+            sortedRandomNumbers = lotteryService.getInstance().sortNumbers(unsortedRandomNumbers);
 
             txtNumber1.appendText(Integer.toString(sortedRandomNumbers[0]));
             txtNumber2.appendText(Integer.toString(sortedRandomNumbers[1]));
