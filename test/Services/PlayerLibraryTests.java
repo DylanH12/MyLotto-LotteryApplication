@@ -15,7 +15,7 @@ class PlayerLibraryTests {
         PlayerLibrary.getInstance().addPlayer(new Player("Dylan", new Integer[]{1, 2, 3, 4, 5, 6}));
         PlayerLibrary.getInstance().addPlayer(new Player("Ghost", new Integer[]{1, 2, 3, 4, 5, 6}));
 
-        Map<String, Integer[]> players = PlayerLibrary.getInstance().getPlayers();
+        Map<String, Integer[]> players = PlayerLibrary.getInstance().getPlayersFromMap();
 
         assertNotNull(players);
         assertTrue(players.containsKey("Dylan"));

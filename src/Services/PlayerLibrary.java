@@ -31,7 +31,7 @@ public class PlayerLibrary {
         playersMap.put(player.getPlayerName(), player.getPlayerNumbers());
     }
 
-    public Map<String, Integer[]> getPlayers()
+    public Map<String, Integer[]> getPlayersFromMap()
     {
         return playersMap;
     }

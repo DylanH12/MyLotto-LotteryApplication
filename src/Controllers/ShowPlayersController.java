@@ -1,5 +1,6 @@
 package Controllers;
 
+import Services.LotteryService;
 import Services.PlayerLibrary;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -16,13 +17,13 @@ import java.util.Map;
 public class ShowPlayersController{
     public Button btnExit;
     public TextArea txtShowPlayers;
-    PlayerLibrary playerLibrary;
+    LotteryService lotteryService;
 
     public void showPlayersButtonAction(ActionEvent actionEvent) {
 
         if (txtShowPlayers.getText().isEmpty())
         {
-            Map<String, Integer[]> players = playerLibrary.getInstance().getPlayers();
+            Map<String, Integer[]> players = lotteryService.getInstance().getPlayers();
 
             if (players.size() == 0)
             {
